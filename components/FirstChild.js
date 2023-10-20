@@ -1,4 +1,4 @@
-import React from "React"
+import React from "react"
 import router from "next/router"
 import { withRouter } from 'next/router'
 import style from "../styles/style.module.css"
