@@ -1,0 +1,49 @@
+.rowflex {
+    height: 98vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.flexitem {
+    width: 250px;
+    height: 100px;
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.item {
+    width: 50px;
+    height: 50px;
+    border: 1px solid grey;
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar {
+    position: relative;
+    width: 250px;
+    height: 98vh;
+    border: 1px solid grey;
+    transition: width 1s;
+}
+
+.collapsebutton {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.content {
+    width: calc(100% - 250px);
+    height: 98vh;
+    border: 1px solid grey;
+    transition: width 1s;
+}
