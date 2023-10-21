@@ -1,5 +1,5 @@
 .rowflex {
-    height: 98vh;
+    height: calc(98vh - 150px);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -27,11 +27,39 @@
     flex-direction: row;
 }
 
+.header {
+    height: 150px;
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 2px;
+}
+
+.menubox {
+    height: 30px;
+    border: 1px solid grey;
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.menuitem {
+    width: 100px;
+    border: 1px solid grey;
+    text-align: center;
+    font-family: Calibri;
+    font-size: 22px;
+}
+
 .sidebar {
     position: relative;
     width: 250px;
-    height: 98vh;
+    height: calc(98vh - 150px);
     border: 1px solid grey;
+    margin: 2px;
     transition: width 1s;
 }
 
@@ -43,7 +71,8 @@
 
 .content {
     width: calc(100% - 250px);
-    height: 98vh;
+    height: calc(98vh - 150px);
     border: 1px solid grey;
+    margin: 2px;
     transition: width 1s;
 }
